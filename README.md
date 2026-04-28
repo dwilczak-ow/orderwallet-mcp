@@ -23,9 +23,9 @@ OW_API_TOKEN="paste-your-token-here" claude --plugin-dir .
 
 Once Claude is running, try `/import-menu raise all drink prices by $1 in store <id>`.
 
-## Install in any other MCP client
+## Install in any other local MCP client
 
-Drop this into your client's MCP config:
+Desktop AI tools (Claude Desktop, Cursor, Zed, Continue, …) launch the server as a local subprocess. Clone this repo, then drop this into the client's MCP config:
 
 ```json
 {
@@ -41,6 +41,16 @@ Drop this into your client's MCP config:
   }
 }
 ```
+
+## Use the hosted endpoint (cloud clients)
+
+ChatGPT custom connectors and Snowflake Cortex Agents run the AI in the cloud — they can't spawn a process on your laptop, so they need a remote MCP endpoint. There's a hosted version of this server at:
+
+```
+https://community.orderwallet.net/api/mcp
+```
+
+Configure the connector to send `Authorization: Bearer <your-token>` on every request (token-paste flow same as the local install — copy from [community.orderwallet.net/mcp](https://community.orderwallet.net/mcp) while signed in). No clone, no `npm install`.
 
 ## Auth token
 
