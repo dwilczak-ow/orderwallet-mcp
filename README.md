@@ -9,7 +9,7 @@ MCP server for OrderWallet community menus. Connect [Claude Code](https://claude
 | Tool | What it does |
 |---|---|
 | `list_menu` | Fetch a store's current menu — categories, items, prices, customizations. |
-| `import_menu_bulk` | Bulk-create categories + items in one shot. Best for seeding a fresh store from a parsed competitor URL. |
+| `import_menu_bulk` | Bulk-create categories + items in one shot. Best for seeding a fresh store from a list of items, an example menu, or a description. |
 | `update_item` | Change a single item's name, price, description, or availability. |
 
 ## Install in Claude Code
