@@ -1,0 +1,8 @@
+{
+  "name": "orderwallet-menu-builder",
+  "description": "Build OrderWallet community menus by talking to Claude — currently exposes list, bulk import, and item update tools.",
+  "version": "0.1.0",
+  "author": "OrderWallet",
+  "homepage": "https://community.orderwallet.net/mcp",
+  "repository": "https://github.com/dwilczak-ow/orderwallet-mcp"
+}

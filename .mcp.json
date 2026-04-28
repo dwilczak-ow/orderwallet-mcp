@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "orderwallet": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/server.js"],
+      "env": {
+        "OW_API_BASE": "${OW_API_BASE:-https://orderwallet.net}",
+        "OW_API_TOKEN": "${OW_API_TOKEN}"
+      }
+    }
+  }
+}
